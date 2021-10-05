@@ -15,7 +15,7 @@ This repository holds the code for the paper.
 
 ## Code Preparation
 ```
-git clone 
+git clone https://github.com/comphyreasoning/compositional_physics_learner.git 
 ```
 
 ## Installation
@@ -41,6 +41,6 @@ sh scripts/test_mc_release.sh
 ### Physical Property Learner and Dynamic predictor
 Please refer to [this repo](https://github.com/comphyreasoning/property_learner_predictor.git) for property learning and dynamics prediction.
 ### Perception
-This module uses [NS-VQA](https://github.com/kexinyi/ns-vqa.git)'s perception module object detection and visual attribute extraction.
+This module uses the public [NS-VQA](https://github.com/kexinyi/ns-vqa.git)'s perception module object detection and visual attribute extraction.
 ### Program parser 
-This module uses [NS-VQA](https://github.com/kexinyi/ns-vqa.git)'s program parser module to tranform language into executable programs.
+This module uses the public [NS-VQA](https://github.com/kexinyi/ns-vqa.git)'s program parser module to tranform language into executable programs.
