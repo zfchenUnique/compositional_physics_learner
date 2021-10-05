@@ -24,7 +24,7 @@ pip install -r requirements
 ```
 
 ## Data Preparation
-- Download videos, video annotation, questions from the [official website](https://comphyreasoning.github.io/).
+- Download videos, video annotation, questions from the [project website](https://comphyreasoning.github.io/).
 
 ## Fast Evaluation
 - Download the regional proposals with attribute and physical property prediction from [Google drive]()
