@@ -27,8 +27,8 @@ pip install -r requirements
 - Download videos, video annotation, questions from the [project website](https://comphyreasoning.github.io/).
 
 ## Fast Evaluation
-- Download the regional proposals with attribute and physical property prediction from [Google drive](https://drive.google.com/file/d/1LsOU-OfODxx8gPj3XdPvvThITGRY3Poy/view?usp=sharing)
-- Download the dynamic predictions from [Google drive](https://drive.google.com/file/d/10JyHNW0dJrmnLbIbr8TOgHTRuKdQWflD/view?usp=sharing)
+- Download the regional proposals with attribute and physical property prediction from the anonymous [Google drive](https://drive.google.com/file/d/1LsOU-OfODxx8gPj3XdPvvThITGRY3Poy/view?usp=sharing)
+- Download the dynamic predictions from the anonymous [Google drive](https://drive.google.com/file/d/10JyHNW0dJrmnLbIbr8TOgHTRuKdQWflD/view?usp=sharing)
 - Run executor for factual questions.
 ```
 sh scripts/test_oe_release.sh
