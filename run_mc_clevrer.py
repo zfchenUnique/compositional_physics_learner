@@ -15,11 +15,11 @@ EPS = 0.000001
 parser = argparse.ArgumentParser()
 parser.add_argument('--use_event_ann', default=1, type=int)
 parser.add_argument('--use_in', default=0, type=int)  # Use interaction network
-parser.add_argument('--program_path', default='/home/tmp_user/code/clevrer_dataset_generation_v2/clevrer_question_generation/output/questions_v13_2/open_end_questions.json')
-parser.add_argument('--question_path', default='/home/tmp_user/code/clevrer_dataset_generation_v2/clevrer_question_generation/output/questions_v13_2/open_end_questions.json')
+parser.add_argument('--program_path', default='/home/zfchen/code/clevrer_dataset_generation_v2/clevrer_question_generation/output/questions_v13_2/open_end_questions.json')
+parser.add_argument('--question_path', default='/home/zfchen/code/clevrer_dataset_generation_v2/clevrer_question_generation/output/questions_v13_2/open_end_questions.json')
 parser.add_argument('--gt_flag', default=0, type=int)
-parser.add_argument('--ann_dir', default='/home/tmp_user/code/output/render_output/causal_v13')
-parser.add_argument('--track_dir', default='/home/tmp_user/code/output/render_output/causal_v13_coco_ann')
+parser.add_argument('--ann_dir', default='/home/zfchen/code/output/render_output/causal_v13')
+parser.add_argument('--track_dir', default='/home/zfchen/code/output/render_output/causal_v13_coco_ann')
 parser.add_argument('--raw_motion_prediction_dir', default='')
 parser.add_argument('--frame_diff', default=5, type=int)
 parser.add_argument('--mc_flag', default=1, type=int)
@@ -98,7 +98,7 @@ for ann_idx in pbar:
                     total_coun += 1
                 pred_list.append(pred)
         ques_id = q['question_id']
-        tmp_pred[ques_id] = pred_list
+        tmp_pred[ques_id] = {'choices': pred_list, 'question_type': q['question_type'] }
 
         if correct_question:
             correct_per_q += 1
@@ -114,7 +114,7 @@ for ann_idx in pbar:
                 correct_coun_per_q += 1
             total_coun_per_q += 1
         valid_q_idx += 1
-    prediction_dict[file_idx] = tmp_pred
+    prediction_dict[file_idx] =  tmp_pred
     pbar.set_description('per choice {:f}, per questions {:f}'.format(float(correct)*100/max(total, EPS), float(correct_per_q)*100/max(total_per_q, EPS)))
 
 if ans is not None:
