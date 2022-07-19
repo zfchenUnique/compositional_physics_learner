@@ -2,9 +2,10 @@
 This repository holds the code for the paper.
 
 > 
-**ComPhy: Compositional Physical Reasoning ofObjects and Events from Videos**, (Under review)
+**ComPhy: Compositional Physical Reasoning ofObjects and Events from Videos**, (ICLR 2022)
 >
-[PDF]()
+
+
 
 [Project Website](https://comphyreasoning.github.io/)
 
