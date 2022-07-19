@@ -8,7 +8,7 @@ This repository holds the code for the paper.
 
 
 [Project Website](https://comphyreasoning.github.io/)
-
+[Evaluation Server](https://eval.ai/web/challenges/challenge-page/1770/overview)
 ## Framework
 <div align="center">
   <img src="_assets/model.png" width="100%">
