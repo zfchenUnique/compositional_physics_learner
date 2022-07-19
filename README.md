@@ -8,6 +8,7 @@ This repository holds the code for the paper.
 
 
 [Project Website](https://comphyreasoning.github.io/)
+
 [Evaluation Server](https://eval.ai/web/challenges/challenge-page/1770/overview)
 ## Framework
 <div align="center">
@@ -38,6 +39,9 @@ sh scripts/test_oe_release.sh
 ```
 sh scripts/test_mc_release.sh
 ```
+- Submit results onto the [evaluation server](https://eval.ai/web/challenges/challenge-page/1770/overview).
+
+
 ## Supporting sub-modules
 ### Physical Property Learner and Dynamic predictor
 Please refer to [this repo](https://github.com/zfchenUnique/property_learner_predictor) for property learning and dynamics prediction.
